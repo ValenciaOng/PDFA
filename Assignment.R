@@ -1,6 +1,6 @@
 # import csv file
 assg_data = read.csv("C:\\Users\\brand\\OneDrive\\Desktop\\PFDA\\PFDA-Assignment\\student_prediction.csv", header = TRUE)
-#assg_data
+#Changes the max limit of prints in console
 options(max.print = 999999)
 
 # cleaning 
@@ -14,15 +14,13 @@ names(assg_data) = c("StuID","StuAge","StuGen","GradHS_Type","Scholarship_Type",
                      "StuMom_Job","StuDad_Job","W_StudyHrs","ReadFreq_XSci","ReadFreq_Sci",
                      "Att_Dept","Impact_Suc","Att_Class","Prep_Ex1","Prep_Ex2","TakingNotes",
                      "ListenClass","Discuss_Imp","Flip_Class","CGPA_LSem","Exp_CGPA","CourseID","Grade")
-#assg_data
+
 
 # delete rows (remove null rows - na.omit())
 assg_data <- na.omit(assg_data)
-#assg_data
 
 # exclude duplicates
 assg_data <- unique(assg_data)  #distinct()
-assg_data
 
 ##Attributes
 #---------------------------------------------------------------------------------------------------
